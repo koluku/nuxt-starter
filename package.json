@@ -11,7 +11,8 @@
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "webp": "node convertWebp.js",
-    "server": "http-server ./dist -g"
+    "server": "http-server ./dist -g",
+    "deploy": "firebase deploy"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
