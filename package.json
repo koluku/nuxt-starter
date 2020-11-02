@@ -55,6 +55,7 @@
     "lint-staged": "^10.4.0",
     "lqip-loader": "^2.2.1",
     "node-sass": "^4.14.1",
+    "npm-check-updates": "^9.2.3",
     "prettier": "^2.1.2",
     "pug": "^3.0.0",
     "pug-loader": "^2.4.0",
@@ -67,5 +68,11 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "webp-loader": "^0.6.0"
-  }
+  },
+  "license": "UNLICENSED",
+  "browserslist": [
+    "defaults",
+    "android >= 4.4",
+    "IE 11"
+  ]
 }
