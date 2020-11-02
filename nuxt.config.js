@@ -14,7 +14,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['normalize.css'],
+  css: ['modern-css-reset'],
 
   styleResources: {
     scss: ['@/assets/scss/common.scss'],

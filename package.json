@@ -27,7 +27,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
     "core-js": "^3.6.5",
-    "normalize.css": "^8.0.1",
+    "modern-css-reset": "^1.1.1",
     "nuxt": "^2.14.6",
     "nuxt-compress": "^4.0.0"
   },
