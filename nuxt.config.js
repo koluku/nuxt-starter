@@ -12,6 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: 'nuxt-starter' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [{ src: 'modernizr-custom.js', body: true, defer: true }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -34,6 +35,7 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     '@aceforth/nuxt-optimized-images',
+    'nuxt-lazysizes',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
