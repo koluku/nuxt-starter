@@ -1,1 +1,62 @@
-// mixin
+@mixin image($path, $width, $height, $scale: 1) {
+  width: $width / $scale;
+  height: $height / $scale;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  .no-webp & {
+    background-image: image-url($path + '.png');
+  }
+  .webp & {
+    background-image: image-url($path + '.webp');
+  }
+}
+
+@mixin pc-image($path, $width, $height, $scale: 1) {
+  width: pc-convert($width / $scale);
+  max-width: $width / $scale * 1px;
+  height: pc-convert($height / $scale);
+  max-height: $height / $scale * 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  .no-webp & {
+    background-image: image-url($path + '.png');
+  }
+  .webp & {
+    background-image: image-url($path + '.webp');
+  }
+}
+
+@mixin sp-image($path, $width, $height, $scale: 1) {
+  width: sp-convert($width / $scale);
+  height: sp-convert($height / $scale);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  .no-webp & {
+    background-image: image-url($path + '.png');
+  }
+  .webp & {
+    background-image: image-url($path + '.webp');
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

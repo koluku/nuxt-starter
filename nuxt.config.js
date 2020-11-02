@@ -21,6 +21,8 @@ export default {
     scss: ['@/assets/scss/common.scss'],
   },
 
+  scripts: { src: 'modernizr-custom.js', body: true, defer: true },
+
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
 
