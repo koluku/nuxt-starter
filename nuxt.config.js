@@ -46,8 +46,8 @@ export default {
     [
       '@nuxtjs/component-cache',
       {
-        max: 1000 * 60 * 60,
-        maxAge: 1000 * 60 * 60 * 24 * 30,
+        max: 10000,
+        maxAge: 1000 * 60 * 60,
       },
     ],
     [
