@@ -15,6 +15,9 @@ updates:
     prefix: fix
     prefix-development: chore
     include: scope
+  labels:
+    - "dependencies"
+    - "automerge"
 # Fetch and update latest `github-actions` pkgs
 - package-ecosystem: github-actions
   directory: '/'
@@ -30,3 +33,6 @@ updates:
     prefix: fix
     prefix-development: chore
     include: scope
+  labels:
+    - "dependencies"
+    - "automerge"
