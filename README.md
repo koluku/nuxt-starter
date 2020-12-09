@@ -18,7 +18,3 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-## Caution
-
-プロジェクトで使用する場合は必要に応じて`.github`フォルダーの`dependabot.yml`や`semantic.yml`、`ci.yml`を消す。
