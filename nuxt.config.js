@@ -72,4 +72,8 @@ export default {
   optimizedImages: {
     optimizeImages: true,
   },
+
+  generate: {
+    dir: 'public',
+  },
 }

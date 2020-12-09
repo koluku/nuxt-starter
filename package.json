@@ -6,12 +6,12 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "node convertWebp.js & nuxt generate",
+    "generate": "node lib/convertWebp.js & nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .eslintignore . --fix",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .eslintignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "webp": "node convertWebp.js",
-    "server": "http-server ./dist -g -b"
+    "webp": "node lib/convertWebp.js",
+    "server": "http-server public -g -b"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
