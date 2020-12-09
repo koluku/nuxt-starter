@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  build:
+  generate:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -52,7 +52,7 @@ jobs:
       - name: install 🧶
         run: yarn
 
-      - name: generate 🏢
+      - name: generate 🔨
         run: yarn generate
 
       - name: git push generate files 📨
