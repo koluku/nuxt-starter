@@ -58,5 +58,5 @@ jobs:
       - name: git push generate files 📨
         run: |
           git add .
-          git commit -m 'nuxt generate' || true
+          git commit -m 'build: nuxt generate' || true
           git push -u origin main
