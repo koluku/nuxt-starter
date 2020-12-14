@@ -58,6 +58,6 @@ jobs:
       - name: Push generate files 📨
         run: |
           git add public
-          git commit -m 'build: nuxt generate' || true
+          git commit -m "build: nuxt generate" || true
           git pull origin main
           git push origin main
