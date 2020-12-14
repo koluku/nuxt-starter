@@ -45,8 +45,8 @@ jobs:
 
       - name: Merge develop branch 💡
         run: |
-          git fetch origin
           git checkout main
+          git fetch origin main
           git merge develop --no-ff -m "merge develop"
 
       - name: Install modules 🧶
@@ -57,7 +57,6 @@ jobs:
 
       - name: Push generate files 📨
         run: |
-          git add public
+          git add .
           git commit -m "build: nuxt generate" || true
-          git pull origin main
           git push origin main
