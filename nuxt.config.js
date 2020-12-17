@@ -12,7 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: 'nuxt-starter' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{ src: 'modernizr-custom.js', body: true, defer: true }],
+    script: [{ src: '/modernizr-custom.js', body: true, defer: true }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
